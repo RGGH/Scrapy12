@@ -1,2 +1,10 @@
 # Scrapy12
-cookpad
+
+## Scrapy : cookpad.com/uk
+
+### Infinite scroll pagination with a twist 
+
+            if response.xpath("//a/@rel='next\'").get() == "1":
+            print("GET Next Page")
+            next_page = response.xpath('//a[@rel="next"]/@href').get()
+            yield response.follow(url=next_page,callback=self.parse)
