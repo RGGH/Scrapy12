@@ -9,4 +9,7 @@
             next_page = response.xpath('//a[@rel="next"]/@href').get()
             yield response.follow(url=next_page,callback=self.parse)
             
-https://github.com/RGGH/Misc/blob/master/cookpad_screenshot.PNG
+
+<a href="">
+  <img src="https://github.com/RGGH/Misc/blob/master/cookpad_screenshot.PNG" alt="cookpad" style="">
+</a> 
